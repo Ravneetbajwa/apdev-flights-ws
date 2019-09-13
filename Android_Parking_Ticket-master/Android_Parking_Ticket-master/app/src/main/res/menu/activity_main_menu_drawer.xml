@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addTicket"
+            android:checkable="false"
+            android:icon="@android:drawable/stat_notify_more"
+            android:title="Add Ticket"
+            android:visible="true" />
+        <item
+            android:id="@+id/parkingLocation"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Parking Location" />
+        <item
+            android:id="@+id/parkingReport"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Parking Report" />
+        <item
+            android:id="@+id/parkingManual"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Parking Manual" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/userProfile"
+
+                android:title="User Profile"
+                android:icon="@mipmap/user_icon" />
+            <item
+                android:id="@+id/supportConatct"
+                android:icon="@android:drawable/stat_sys_phone_call"
+                android:title="Support Contact" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@android:drawable/ic_lock_lock"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
